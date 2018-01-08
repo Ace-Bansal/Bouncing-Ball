@@ -27,10 +27,6 @@ body{
   /* transition: background 1s, transform 2s 1s ease-out; */
   animation: drop 1.2s both cubic-bezier(.53,.01,.76,.47);
 }
-/* .circle:hover{
-  background:salmon;
-  transform:rotate(1080deg);
-} */
 
 @keyframes drop {
   0%{top:-110px;}
@@ -51,3 +47,10 @@ body{
   0%{top:450px;}
   100%{top:100px;}
 } */
+
+.floor{
+  height:10px;
+  background: dimgray;
+  position: relative;
+  top:512px;
+}
