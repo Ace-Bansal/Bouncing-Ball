@@ -1,0 +1,53 @@
+img{
+  width: 200px;
+  transform: rotateX(2);
+  top: 50%;
+}
+
+body{
+  text-align: center;
+  height:100%;
+  margin:0;
+
+}
+  html{
+    height:100%;
+
+  }
+.circle{
+  position: relative;
+  width:100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 300px;
+  background: teal;
+  color: white;
+  /* transition: background 1s, transform 2s 1s ease-out; */
+  animation: drop 1.2s both cubic-bezier(.53,.01,.76,.47);
+}
+/* .circle:hover{
+  background:salmon;
+  transform:rotate(1080deg);
+} */
+
+@keyframes drop {
+  0%{top:-110px;}
+  20%{top:400px;}
+  40%{top:150px;}
+  60%{top:400px;}
+  80%{top:250px;}
+  100%{top:400px;}
+
+}
+
+/* @keyframes first-down{
+  0%{top:-102px;}
+  100%{top:450px;}
+}
+
+@keyframes first-up{
+  0%{top:450px;}
+  100%{top:100px;}
+} */
